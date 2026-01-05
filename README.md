@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # demopetnest
+=======
+# first_app
+>>>>>>> friend/main
 
 A new Flutter project.
 

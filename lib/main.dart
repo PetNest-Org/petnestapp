@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 import 'package:demopetnest/VetBooking.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'CartScreen.dart';
+=======
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+>>>>>>> friend/main
 
 void main() {
   runApp(const MyApp());
@@ -14,11 +19,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+<<<<<<< HEAD
       theme: ThemeData(
         textTheme: GoogleFonts.interTextTheme(),
         scaffoldBackgroundColor: Colors.grey.shade100,
       ),
       home: VetBookingScreen(),
+=======
+      title: 'Shop',
+      theme: ThemeData(useMaterial3: true),
+      home: const HomeScreen(),
+>>>>>>> friend/main
     );
   }
 }

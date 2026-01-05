@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "demopetnest",
     "short_name": "demopetnest",
+=======
+    "name": "first_app",
+    "short_name": "first_app",
+>>>>>>> friend/main
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

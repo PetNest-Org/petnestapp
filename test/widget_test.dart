@@ -8,7 +8,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+<<<<<<< HEAD
 import 'package:demopetnest/main.dart';
+=======
+import 'package:first_app/main.dart';
+>>>>>>> friend/main
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
