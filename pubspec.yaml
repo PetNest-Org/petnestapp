@@ -8,26 +8,103 @@ version: 1.0.0+1
 environment:
   sdk: '>=3.2.5 <4.0.0'
 
+#---------------------packages-----------------------#
 dependencies:
   flutter:
     sdk: flutter
 
-  # UI and Icons
-  google_fonts: ^6.2.1
-  cupertino_icons: ^1.0.8
+  # Utility Packages
+  intl: ^0.19.0
+  lottie: ^3.1.2
+  logger: ^2.4.0
+  shimmer: ^3.0.0
+  clipboard: ^0.1.3
+  image_picker: ^1.1.2
+  url_launcher: ^6.2.1
+  flutter_dropzone: ^4.0.1
+  flutter_typeahead: ^5.2.0
+  connectivity_plus: ^6.0.3
+  multi_select_flutter: ^4.1.3
+  cached_network_image: ^3.3.0
+  flutter_native_splash: ^2.3.5
+  smooth_page_indicator: ^1.1.0
+
+  # Web Specific
+  web: ^1.0.0
+  http: ^1.1.2
+  html: ^0.15.4
+  fl_chart: ^0.69.0
+  data_table_2: ^2.5.9
+  url_strategy: ^0.3.0
+
+  # Icons
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.6
+
+  # State Management
+  get: ^4.6.6
+  get_storage: ^2.1.1
+
+  # Product Specific
+  readmore: ^3.0.0
+  carousel_slider: ^5.0.0
+  flutter_rating_bar: ^4.0.1
+  capped_progress_indicator: ^0.0.2
+  custom_rating_bar: ^3.0.0
+  flutter_pannable_rating_bar: ^2.7.2+1
+
+  # Firebase
+  firebase_core: ^3.4.1
+  firebase_auth: ^5.2.1
+  cloud_firestore: ^5.4.1
+  firebase_storage: ^12.3.0
+  google_sign_in: ^6.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  # Using a stable version of lints for better code quality
-  flutter_lints: ^3.0.0
+
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logos/t-store-splash-logo-white.png"
+
+  flutter_lints: ^4.0.0
 
 flutter:
-  # Enables Material Design components and Material Icons
   uses-material-design: true
 
-  # Asset management
+  #--------------- LOCAL ASSETS ------------------#
   assets:
-    - assets/images/
-    # If you have specific fonts, uncomment and add them below:
-    # - assets/fonts/
+    - assets/logos/
+    - assets/icons/brands/
+    - assets/images/content/
+    - assets/images/banners/
+    - assets/images/reviews/
+    - assets/images/products/
+    - assets/icons/categories/
+    - assets/images/animations/
+    - assets/icons/payment_methods/
+    - assets/images/on_boarding_images/
+
+  #--------------- LOCAL FONTS ------------------#
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800

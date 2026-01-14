@@ -1,41 +1,25 @@
+import 'package:demopetnest/app.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:get_storage/get_storage.dart';
 
-// Use clear, consistent folder structures for imports
-import 'screens/home_screen.dart';
-import 'package:demopetnest/VetBooking.dart'; // Suggested rename for file consistency
+void main() async {
+  // Ensure that widgets are initialized
+  final WidgetsBinding widgetsBinding =
+      WidgetsFlutterBinding.ensureInitialized();
 
-void main() {
-  runApp(const MyApp());
-}
+  // Initialize GetX Local Storage
+ // await GetStorage.init();
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  // Await Splash until other items load
+ // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'PetNest', // Use a descriptive title
+ // Initialize Firebase & Authentication Repository
+  // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
+  //     .then(
+  //   (FirebaseApp value) => Get.put(AuthenticationRepository()),
+  // );
 
-      // Centralized Theme Definition
-      theme: _buildTheme(),
-
-      // Standardize on one entry point
-      home: const HomeScreen(),
-    );
-  }
-
-  ThemeData _buildTheme() {
-    final baseTheme = ThemeData(
-      useMaterial3: true,
-      colorSchemeSeed: Colors.blue, // Optional: provides a unified color palette
-      scaffoldBackgroundColor: Colors.grey.shade100,
-    );
-
-    return baseTheme.copyWith(
-      // Apply Google Fonts to the Material 3 text theme
-      textTheme: GoogleFonts.interTextTheme(baseTheme.textTheme),
-    );
-  }
+  runApp(const App());
 }
